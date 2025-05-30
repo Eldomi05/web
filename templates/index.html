@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Calculadora para notas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1>Calculadora de notas</h1>
+            <p>Esta app web te ayuda a calcular tu nota en una de tus clases.</p>
+            <p>Ingrese las notas de sus asignaciones y las notas de exámenes con sus respectivos pesos.</p>
+            <form method="post" action="/calcular">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre">
+
+                <div id="notas-contenedor"></div>
+
+                <button type="button" onclick="agregarNota()">Agregar nota</button>
+
+        <button type ="submit">Calcular</button>
+        <button type ="reset">Limpiar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

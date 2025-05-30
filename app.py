@@ -36,7 +36,7 @@ def submit():
             if total_peso == 0:
                     error = "La suma de los pesos debe ser diferente de cero"
             else:
-                promedio_ponderado = sum(nota * peso for nota, peso in zip(notas, pesos)) / total_peso
+                promedio_ponderado = sum(nota * peso for nota, peso in zip(notas, pesos))
                 promedio = round(promedio_ponderado, 2)
                 if promedio >= 90:
                     resultado = "A"

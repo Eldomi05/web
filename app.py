@@ -21,7 +21,7 @@ def submit():
             
             if nota and peso:
                 notas.append(float(nota))
-                pesos.append(float(peso))
+                pesos.append(float(peso) / 100)
             elif nota or peso:
                 error = "Por favor, ingrese tanto la nota como el peso para cada trabajo."
                 break

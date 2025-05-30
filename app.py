@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/google667a48832647648e.html')
 def index():
     return render_template('index.html')
 

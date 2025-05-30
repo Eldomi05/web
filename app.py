@@ -1,10 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 
 app = Flask(__name__)
-
 @app.route('/google667a48832647648e.html')
-def index():
-    return render_template('index.html')
+def google_verification():
+    return send_from_directory('static', 'google667a48832647648e.html')
 
 @app.route('/calcular', methods=['POST'])
 def submit():

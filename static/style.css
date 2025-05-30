@@ -27,7 +27,7 @@ body{
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 500px;
+    max-width: 950px;
 }
 h1{
     text-align: center;
@@ -93,4 +93,18 @@ a button{
 }
 a button.hover{
     background-color: #00bcd4;
+}
+.notas-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;;
+}
+.grupo-notas{
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }

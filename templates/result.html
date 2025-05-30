@@ -10,8 +10,14 @@
     <div class="container">
        <div class="form_box">
            <h1>Resultado para {{ nombre }}</h1>
-           <p><strong>Promedio</strong> {{ promedio }}</p>
-           <p><strong>Calificacion:</strong> {{ letra }}</p>   
+
+           {% if error %}
+              <p style="color: red;"><strong>Error:</strong> {{ error}}</p>
+            {% else %}
+                <p><strong>Promedio:</strong> {{ promedio }}</p>
+                <p><strong>Calificación:</strong> {{ letra  }}</p>
+            {% endif%}
+
         
            <a href="{{ url_for('index')}}" class="boton-volver">Volver</a>
         </div>

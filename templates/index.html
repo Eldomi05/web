@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Calculadora para notas</title>
+    <title>Calculadora para promedio final</title>
 </head>
 <body>
     <div class="container">
         <div class="form_box">
-            <h1>Calculadora de notas</h1>
-            <p>Esta app web te ayuda a calcular tu nota en una de tus clases.</p>
-            <p>Ingrese las notas de sus asignaciones y las notas de exámenes con sus respectivos pesos.</p>
+            <h1>Calculadora para promedio</h1>
+            <p>Esta app web te ayuda a calcular tu promedio en una de tus clases.</p>
+            <p>Ingrese las notas de sus quices y exámenes. Solo se necesita un peso por cada grupo.</p>
+            <p>OJO: Esta app no calcula solo una nota.</p>
+            
             <form method="post" action="/calcular">
                 <label for="Nombre">Nombre:</label>
                 <input type="text" name="Nombre">
-
-                <div id="notas-contenedor"></div>
-
-                <button type="button" onclick="agregarNota()">Agregar nota</button>
-
-        <button type ="submit">Calcular</button>
-        <button type ="reset">Limpiar</button>
+            
+        <div class="notas-contenedor">
+            <div class="grupo-notas">    
+                <h1>Notas de quices</h1>
+                <div id="quices-contenedor"></div>
+                <button type="button" onclick="agregarQuiz()">Agregar Quice</button>
+                <label for="peso_quices">Peso total de los Quizes(%)</label>
+                <input type="number" name="peso_quices" step="any" required>
+            </div>
+            
+            <div class="grupo-notas">
+                <h1>Notas examenes</h1>
+                <div id="examenes-contenedor"></div>
+                <button type="button" onclick="agregarExamen()">Agregar Examen</button>
+                <label for="peso_examen">Peso total de los Examens(%)</label>
+                <input type="number" name="peso_examen" step="any" required>
+            </div>
+        </div> 
+                <br><br>
+                 <button type ="submit">Calcular</button>
+                 <button type ="reset">Limpiar</button>
             </form>
         </div>
     </div>

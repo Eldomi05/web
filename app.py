@@ -7,7 +7,7 @@ def google_verification():
 
 @app.route('/calcular', methods=['POST'])
 def submit():
-    nombre = request.form.get('nombre''')
+    nombre = request.form.get('nombre')
     error = None
 
     try:

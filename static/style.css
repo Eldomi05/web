@@ -53,7 +53,9 @@ label{
 }
 input[type="number"],
 input[type="text"]{
-    width: 300px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;

@@ -103,15 +103,24 @@ a button.hover{
 }
 .notas-contenedor{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 20px;;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;;
 }
 .grupo-notas{
-    flex: 1;
-    max-width: 400px;
+    flex: 1 1 400px;
+    max-width: 100%;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+@media screen and (max-whidth: 600px) {
+    .grupo-notas{
+        flex: 1 1 100%;
+    }
 }

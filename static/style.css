@@ -112,6 +112,12 @@ a button.hover{
     width: 100%;
     box-sizing: border-box;;
 }
+@media (max-width: 768px) {
+    .notas-contenedor{
+        flex-direction: column;
+        gap: 20px;
+    }
+} 
 .grupo-notas{
     flex: 1 1 400px;
     max-width: 100%;

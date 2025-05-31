@@ -15,9 +15,8 @@ body{
     padding:40px 20px;
 }
 .container{
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 15px;
 }
 .form_box{
     background-color: white;
@@ -28,7 +27,15 @@ body{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 950px;
+    box-sizing: border-box;
 }
+@media screen and (max-width:600px){
+    .form_box{
+        padding: 20px;
+        width: 90%;
+        max-width: 100%;
+    }
+} 
 h1{
     text-align: center;
     color: #333;

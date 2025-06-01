@@ -138,5 +138,6 @@ a button:hover{
 @media screen and (max-width: 600px) {
     .grupo-notas{
         flex: 1 1 100%;
+        max-width: 100%;
     }
 }

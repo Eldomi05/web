@@ -108,6 +108,7 @@ a button.hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 20px;
     margin-top: 20px;
     width: 100%;
@@ -122,6 +123,7 @@ a button.hover{
 .grupo-notas{
     flex: 1 1 300px;
     max-width: 400%;
+    min-height: 320px;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;

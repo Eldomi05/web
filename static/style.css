@@ -122,17 +122,22 @@ a button.hover{
 } 
 .grupo-notas{
     flex: 1 1 300px;
-    max-width: 400%;
+    max-width: 400px;
     min-height: 350px;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-sizing: border-box;
 }
-@media screen and (max-whidth: 600px) {
+.grupo-notas h1 span{
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
     .grupo-notas{
         flex: 1 1 100%;
     }

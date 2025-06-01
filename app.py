@@ -6,7 +6,7 @@ def index():
 
 @app.route('/calcular', methods=['POST'])
 def submit():
-    nombre = request.form.get('nombre')
+    nombre = request.form.get('nombre', "").strip() or "Estudiante"
     error = None
 
     try:

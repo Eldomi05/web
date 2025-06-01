@@ -134,7 +134,7 @@ a button.hover{
 }
 .grupo-notas h1 span{
     display: inline-block;
-    min-width: 100px;
+    min-width: 110px;
     text-align: center;
 }
 @media screen and (max-width: 600px) {

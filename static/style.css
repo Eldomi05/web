@@ -21,14 +21,13 @@ body{
 .form_box{
     background-color: white;
     color: black;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 1000px;
     box-sizing: border-box;
-    margin-bottom: 60px;
 }
 @media screen and (max-width:600px){
     .form_box{
@@ -101,7 +100,7 @@ a button{
     cursor: pointer;
     transition: 0.3s;
 }
-a button.hover{
+a button:hover{
     background-color: #00bcd4;
 }
 .notas-contenedor{

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Calculadora para promedio final</title>
+    <title>Calculadora para nota final</title>
 </head>
 <body>
     <div class="container">
         <div class="form_box">
-            <h1>Calculadora para promedio</h1>
-            <p>Esta app web te ayuda a calcular tu promedio en una de tus clases.</p>
+            <h1>Calculadora para nota</h1>
+            <p>Esta app web te ayuda a calcular tu final en una de tus clases.</p>
             <p>Ingrese las notas de sus quices y exámenes. Solo se necesita un peso por cada grupo.</p>
             <p>OJO: Esta app no calcula solo una nota.</p>
             
             <form method="post" action="/calcular">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="Nombre">
+                <input type="text" id="nombre" name="nombre">
             
         <div class="notas-contenedor">
             <div class="grupo-notas">    

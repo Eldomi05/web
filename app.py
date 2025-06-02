@@ -22,6 +22,12 @@ def submit():
         examenes = [float(n) for n in examenes if n.strip() != '']
         quices = [float(n) for n in quices if n.strip() != '']
 
+        #limite de cantidad 
+        for nota in examenes + quices:
+            if nota < 0 or nota > 100:
+                error = "Las notas deben estar entre 0 y 100."
+                raise ValueError(error)
+
         #obtener peseso de examenes y quices
         peso_examen = float(request.form.get('peso_examen')) / 100
         peso_quices = float(request.form.get('peso_quices')) / 100

@@ -23,7 +23,7 @@ function agregarExamen() {
 
     div.innerHTML = `
         <label for='examen${contadorExamenes}'>Examen ${contadorExamenes}:</label>
-        <input type='number' id='examen${contadorExamenes}' name='examenes[]' step='any' required>
+        <input type='number' id='examen${contadorExamenes}' name='examenes[]' step='any' max='100' required>
         `;
 
         container.appendChild(div);

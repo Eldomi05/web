@@ -119,9 +119,7 @@ a button:hover{
         gap: 20px;
     }
 } 
-.grupo-notas label,
-.grupo-notas input,
-.grupo-notas button{
+.grupo-notas{
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);;
     min-height: 350px;
@@ -131,6 +129,13 @@ a button:hover{
     border-radius: 10px;
     background-color: #f9f9f9;
     box-sizing: border-box;
+}
+.grupo-notas input,
+.grupo-notas label,
+.grupo-notas button{
+    width: 100%;
+    max-width: 100%;
+    display: block;
 }
 .grupo-notas input[type ="number"]{
     margin-bottom: 10px;
@@ -150,7 +155,7 @@ a button:hover{
         max-width: 100%;
     }
 }
-.botones-finales{
+.botones-finales {
     display: flex;
     justify-content: center;
     gap: 20px;
